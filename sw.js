@@ -1,5 +1,5 @@
-const CACHE = 'foco-v1';
-const CORE = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
+const CACHE = 'foco-v2';
+const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE)));
